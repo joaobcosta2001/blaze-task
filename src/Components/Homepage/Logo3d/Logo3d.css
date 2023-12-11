@@ -1,0 +1,9 @@
+#rotating-logo-video{
+    z-index: -1;
+    position: absolute;
+    left: 450px;
+    top:-150px;
+    width: 900px;
+    height: 600px;
+    background-image: url(./logo-rotating.gif);
+}

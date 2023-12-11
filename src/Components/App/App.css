@@ -1,0 +1,25 @@
+@font-face {
+  font-family: open-sans;
+  src: url(../../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+  font-family: dm-sans;
+  src: url(../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+@font-face {
+  font-family: safira-march;
+  src: url(../../assets/fonts/Safira\ March.otf);
+}

@@ -1,0 +1,42 @@
+.navbar-button{
+    border: none;
+    background-color: transparent;
+    font-family: dm-sans;
+    text-transform: uppercase;
+    font-size: 35px;
+    transition: 0.2s ease;
+}
+
+.navbar-button:hover{
+    transition: 0.2s ease;
+    color: var(--red-orange);
+}
+
+.navbar-button-underline-background{
+    height: 3px;
+    margin-left: 20%;
+    width: 60%;
+    background-color: black;
+}
+
+.navbar-button-underline-foreground{
+    position: relative;
+    top: -6%;
+    height: 3px;
+    margin-left: 20%;
+    width: 0%;
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%); 
+    transition: 0.2s;
+}
+
+.navbar-button-underline-foreground-hovered{
+    position: relative;
+    top: -6%;
+    height: 3px;
+    margin-left: 20%;
+    width: 60%;
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%); 
+    transition: 0.2s;
+}
