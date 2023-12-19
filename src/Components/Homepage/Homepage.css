@@ -240,8 +240,8 @@ body{
 
 .our-process-item{
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 30px;
     background-color: white;
     padding: 25px;
@@ -252,8 +252,8 @@ body{
     margin-left: 10%;
     margin-top: 5%;
     background-size: 100% 100%;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 5%;
 }
 
@@ -277,13 +277,13 @@ body{
 .our-process-item-title{
     font-family: poppins;
     margin-left: 10%;
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 35px;
 }
 
 .our-process-item-description{
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 16px;
     color: rgb(90, 90, 90);
     font-family: inter;
     font-weight: 300;
@@ -294,21 +294,21 @@ body{
 
 }
 #our-process-item-2{
-    left: 30%;
-    top: 10%
+    left: 350px;
+    top: 50px;
 }
 #our-process-item-3{
-    top: 60%
+    top: 360px
 }
 #our-process-item-4{
-    left: 30%;
-    top: 70%
+    left: 350px;
+    top: 410px
 }
 
 #our-process-list-description{
     top:35%;
     position: absolute;
-    left: 63%;
+    left: 800px;
 }
 
 #our-process-list-description-title{
