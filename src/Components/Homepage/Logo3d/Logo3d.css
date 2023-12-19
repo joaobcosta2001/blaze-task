@@ -5,5 +5,13 @@
     top:-150px;
     width: 900px;
     height: 600px;
-    background-image: url(./logo-rotating.gif);
+}
+
+#rotating-logo-video-mobile{
+    width: 300vw;
+    position: absolute;
+    left:-110vw;
+    top:17vh;
+    height: 70vh;
+    z-index: -1;
 }
