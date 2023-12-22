@@ -5,6 +5,7 @@
     text-transform: uppercase;
     font-size: 35px;
     transition: 0.2s ease;
+    white-space: nowrap;
 }
 
 .navbar-button:hover{

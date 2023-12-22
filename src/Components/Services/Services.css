@@ -1,0 +1,130 @@
+#services-title{
+    font-family: open-sans;
+    font-size: 100px;
+    font-weight: 700;
+    width: 100vw;
+    flex-shrink: 0;
+}
+
+#services-title-div{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#services-title-bar{
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
+    width: 300px;
+    margin-left: 40vw;
+    width: 20vw;
+    height: 15px;
+}
+
+.blazetask-fade-background{
+    background: #ff3131;
+    background: linear-gradient(49deg, #ff3131 0%, #ff914d 100%);
+    color:white;
+}
+
+.light-gray-background{
+    background: #e9eaed;
+    color:black;
+}
+
+
+.services-step-div{
+    padding-left: 0vw;
+    font-family: poppins;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+}
+
+.services-step-contents{
+    display: flex;
+    margin-top: 100px;
+}
+
+.services-step-image{
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 150px 300px rgba(0, 0, 0, 0.367);
+}
+
+.services-step-image-left{
+    margin-right: 150px;
+}
+
+.services-step-image-right{
+    margin-left: 150px;
+}
+
+.services-step-number{
+    font-size: 100px;
+    font-weight: 800;
+}
+.services-step-title{
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.services-step-description{
+    width: 40vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+#services-title-mobile{
+    font-family: open-sans;
+    font-size: 20vw;
+    line-height: 20vw;
+    font-weight: 700;
+    width: 100vw;
+    flex-shrink: 0;
+}
+
+#services-title-div-mobile{
+    text-align: center;
+    margin-top: 30vw;
+    margin-bottom: 12vw;
+}
+
+#services-title-bar-mobile{
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 4vw;
+    height: 4vw;
+}
+
+.services-step-div-mobile{
+    padding-left: 12.5vw;
+    font-family: poppins;
+}
+
+.services-step-contents-mobile{
+    display: flex;
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+}
+
+.services-step-number-mobile{
+    font-size: 25vw;
+    font-weight: 800;
+}
+.services-step-title-mobile{
+    font-size: 8vw;
+    font-weight: 200;
+    line-height: 9vw;
+    margin-bottom: 5vw;
+}
+
+.services-step-description-mobile{
+    width: 75vw;
+    text-align: justify;
+    text-justify: inter-word;
+}

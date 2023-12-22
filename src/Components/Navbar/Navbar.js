@@ -2,6 +2,7 @@ import "./Navbar.css"
 import NavbarButton from "./NavbarButton/NavbarButton";
 import { useState} from "react";
 import { isMobile } from "react-device-detect";
+import { Link } from "react-router-dom";
 
 function Navbar() {
 
@@ -22,9 +23,9 @@ function Navbar() {
         <div>
         {!isMobile?(
             <div id="navbar">
-                <NavbarButton title="home"/>
+                <Link to="/"><NavbarButton title="home"/></Link>
                 <NavbarButton title="ABOUT US"/>
-                <NavbarButton title="SERVICES"/>
+                <Link to="/services"><NavbarButton title="SERVICES"/></Link>
                 <NavbarButton title="CONTACTS"/>
             </div>
         ):(
@@ -47,15 +48,15 @@ function Navbar() {
                     )}
                 </button>
                 <div id={isMobileNavbarOpen?"mobile-navbar-overlay":"mobile-navbar-overlay-hidden"}>
-                    <button className="mobile-navbar-button">
+                    <Link to="/"><button className="mobile-navbar-button">
                         HOME
-                    </button>
+                    </button></Link>
                     <button className="mobile-navbar-button">
                         ABOUT US
                     </button>
-                    <button className="mobile-navbar-button">
+                    <Link to="/services"><button className="mobile-navbar-button">
                         SERVICES
-                    </button>
+                    </button></Link>
                     <button className="mobile-navbar-button">
                         CONTACTS
                     </button>

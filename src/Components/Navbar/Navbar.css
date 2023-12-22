@@ -5,6 +5,7 @@
     margin-top: 4%;
     display: flex;
     justify-content: space-between;
+    z-index: 5;
 }
 
 #mobile-navbar{
