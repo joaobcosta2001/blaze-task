@@ -1,0 +1,51 @@
+#footer-div{
+    width: 100vw;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+    background-color: rgb(15, 15, 15);
+    color:white;
+    text-align: center;
+}
+
+#footer-links{
+    width: 300px;
+}
+
+.footer-link{
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+    transition: 0.2s;
+    padding-bottom: 10px;
+}
+
+.footer-link:hover{
+    color:white;
+    transition: 0.2s;
+}
+
+.footer-social-button{
+    background-color: transparent;
+    border: none;
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#footer-social-buttons{
+    margin-bottom: 20px;
+}
+
+#instagram-button{
+    background-image: url(../../assets/images/instagram-icon.svg);
+}
+#facebook-button{
+    background-image: url(../../assets/images/facebook-icon.svg);
+}
+#linkedin-button{
+    background-image: url(../../assets/images/linkedin-icon.svg);
+}

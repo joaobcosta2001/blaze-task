@@ -1,0 +1,145 @@
+#contacts-div{
+    background-color: black;
+    padding-left: 12.5vw;
+    padding-top: 100px;
+    margin-top: 50px;
+    color: white;
+    display: flex;
+}
+
+#contacts-description-div{
+    width: 32.5vw;
+}
+
+#contacts-description-title{
+    font-family: poppins;
+    font-size: 50px;
+}
+
+#contacts-description-text{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contacts-description-contact{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#contacts-form{
+    text-align: right;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.contact-form-input{
+    border: none;
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: poppins;
+    margin-bottom: 20px;
+    background-color: #e9eaed;
+}
+
+.contact-form-textarea{
+    padding-top: 15px;
+    height: 200px;
+}
+
+#contacts-form-submit-button{
+    border: none;
+    font-family: poppins;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e9eaed;
+    cursor: pointer;
+}
+
+#contacts-color-bar{
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
+    width: 250px;
+    height: 10px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+#contacts-div-mobile{
+    background-color: black;
+    padding-left: 12.5vw;
+    padding-top: 10vw;
+    margin-top: 25vw;
+    color: white;
+    display: block;
+}
+
+#contacts-description-div-mobile{
+    width: 75vw;
+
+}
+
+#contacts-description-title-mobile{
+    font-family: poppins;
+    font-size: 10vw;
+}
+
+#contacts-description-text-mobile{
+    font-size: 4vw;
+    margin-bottom: 5vw;
+}
+
+.contacts-description-contact-mobile{
+    margin-bottom: 1vw;
+    font-size: 5.5vw;
+    font-weight: 600;
+}
+
+#contacts-form-mobile{
+    padding-bottom: 30vw;
+}
+
+.contact-form-input-mobile{
+    border: none;
+    width: 72vw;
+    height: 10vw;
+    padding-left: 5vw;
+    font-size: 3vw;
+    font-family: poppins;
+    margin-bottom: 5vw;
+    background-color: #e9eaed;
+}
+
+.contact-form-textarea-mobile{
+    padding-top: 3vw;
+    height: 50vw;
+}
+
+#contacts-form-submit-button-mobile{
+    border: none;
+    font-family: poppins;
+    font-size: 4vw;
+    width: 40vw;
+    height: 10vw;
+    border-radius: 5vw;
+    background-color: #e9eaed;
+    cursor: pointer;
+}
+
+#contacts-color-bar-mobile{
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
+    width: 50vw;
+    height: 2vw;
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+}

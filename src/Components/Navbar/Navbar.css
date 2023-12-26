@@ -83,18 +83,18 @@
     padding-left: 10%;
     padding-top: 35%;
     opacity: 1;
-    transition: 0.2s;
+    transition: 0.2s ease-out;
     z-index: 2;
     overflow-y: hidden;
 }
 
 #mobile-navbar-overlay-hidden{
-    width: 100vw;
+    width: 0vw;
     height: 100vh;
     padding-left: 10%;
     padding-top: 15%;
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.2s ease-out;
 }
 
 .mobile-navbar-button{
@@ -107,4 +107,158 @@
     text-align: left;
     height: 10%;
     display: block;
+    text-decoration: none;
+}
+
+.mobile-navbar-link{
+    text-decoration: none;
+}
+
+#language-button-div{
+    position: absolute;
+    top:50px;
+    right: 50px;
+    width: 60px;
+    height: 30px;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+#language-button-container{
+    position: relative;
+    width: 80px;
+}
+
+#language-button-background-div-pt{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    transition: 0.15s ease-out; 
+}
+
+#language-button-background-div-en{
+    position: absolute;
+    top:0;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    transition: 0.15s ease-out;
+}
+
+
+#language-button-background-text{
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+
+#language-button-foreground-text-pt{
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    clip-path: polygon(0 0, 30px 0, 30px 30px, 0 30px);
+    transition: 0.15s ease-out;
+}
+
+#language-button-foreground-text-en{
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    clip-path: polygon(30px 0, 60px 0, 60px 30px, 30px 30px);
+    transition: 0.15s ease-out;
+}
+
+.language-button-text-container{
+    padding-top: 3px;
+    text-align: center;
+    width: 30px;
+}
+
+
+
+
+#language-button-div-mobile{
+    position: absolute;
+    top:10vw;
+    right: 15vw;
+    width: 18vw;
+    height: 9vw;
+    font-family: poppins;
+    font-size: 4.5vw;
+}
+
+#language-button-container-mobile{
+    position: relative;
+    width: 24vw;
+}
+
+#language-button-background-div-pt-mobile{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 9vw;
+    height: 9vw;
+    background-color: black;
+    transition: 0.15s ease-out; 
+}
+
+#language-button-background-div-en-mobile{
+    position: absolute;
+    top:0;
+    left: 9vw;
+    width: 9vw;
+    height: 9vw;
+    background-color: black;
+    transition: 0.15s ease-out;
+}
+
+
+#language-button-background-text-mobile{
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+
+#language-button-foreground-text-pt-mobile{
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    clip-path: polygon(0 0, 9vw 0, 9vw 9vw, 0 9vw);
+    transition: 0.15s ease-out;
+}
+
+#language-button-foreground-text-en-mobile{
+    display: flex;
+    position: absolute;
+    top: 0;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    clip-path: polygon(9vw 0, 18vw 0, 18vw 9vw, 9vw 9vw);
+    transition: 0.15s ease-out;
+}
+
+.language-button-text-container-mobile{
+    padding-top: 0.9vw;
+    text-align: center;
+    width: 9vw;
 }

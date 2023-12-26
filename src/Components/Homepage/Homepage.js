@@ -1,24 +1,18 @@
+import { Link } from "react-router-dom";
 import "./Homepage.css"
-import React,{useEffect,useState} from "react";
 import Logo3d from "./Logo3d/Logo3d";
 import { isMobile } from "react-device-detect";
+import { useTranslation } from "react-i18next";
 
 function Homepage() {
 
-    const [headerIsVisible, setHeaderIsVisible] = useState(false);
-
-
-    useEffect(()=>{
-        setTimeout(()=>{
-            setHeaderIsVisible(true);
-        },100)
-    },[])
+    const {t} = useTranslation()
     
     return (
         <div>
         {!isMobile?(
             <div id="homepage">
-                <div id={headerIsVisible?"homepage-header":"homepage-header-initial"}>
+                <div id="homepage-header">
                     <Logo3d/>
                     <div id="homepage-header-titles">
                         <div id="homepage-header-title">
@@ -33,10 +27,10 @@ function Homepage() {
                 <div id="what-we-are-div">
                     <div id="what-we-are-text-div">
                         <div id="what-we-are-title">
-                            Your Partner in<br/> Digital Automation
+                            {t("homepage_description_title")}
                         </div>
                         <div id="what-we-are-description">
-                            We are BlazeTask. We empower your business by automating repetitive, tedious and costly data tasks. Save time, save resources, save money by allowing to transform your business operation!
+                            {t("homepage_description_text")}
                         </div>
                         <div id="homepage-what-are-we-bar"></div>
                     </div>
@@ -48,10 +42,10 @@ function Homepage() {
                         <div id="our-process-intro-image"/>
                         <div>
                             <div id="our-process-title">
-                                We guide your <br/> business  towards the <br/> future of <i>efficiency</i>.
+                               {t("our_process_title")} <i>{t("efficiency")}</i>.
                             </div>
                             <div id="our-process-description">
-                                We follow a simple but effective process in order to find ineficient processes within your business and build tools with the latest AI tehcnologies that will help mitigate these problems.
+                                {t("our_process_description")}
                             </div>
                             <div id="homepage-our-process-bar"></div>
                         </div>
@@ -59,27 +53,27 @@ function Homepage() {
                     <div id="our-process-list">
                         <div className="our-process-item" id="our-process-item-1">
                             <div className="our-process-icon" id="our-process-icon-1"/>
-                            <div className="our-process-item-title">Understanding Operations</div>
-                            <div className="our-process-item-description">Explore client workflows to find automation opportunities.</div>
+                            <div className="our-process-item-title">{t("our_process_card_1_title")}</div>
+                            <div className="our-process-item-description">{t("our_process_card_1_description")}</div>
                         </div>
                         <div className="our-process-item" id="our-process-item-2">
                             <div className="our-process-icon" id="our-process-icon-2"/>
-                            <div className="our-process-item-title">Opportunity Evaluation</div>
-                            <div className="our-process-item-description">Strategically choose the most profitable digital enhancements</div>
+                            <div className="our-process-item-title">{t("our_process_card_2_title")}</div>
+                            <div className="our-process-item-description">{t("our_process_card_2_description")}</div>
                         </div> 
                         <div className="our-process-item" id="our-process-item-3">
                             <div className="our-process-icon"  id="our-process-icon-3"/>
-                            <div className="our-process-item-title">Implementing Automation</div>
-                            <div className="our-process-item-description">Develop applications to automate your tasks.</div>
+                            <div className="our-process-item-title">{t("our_process_card_3_title")}</div>
+                            <div className="our-process-item-description">{t("our_process_card_3_description")}</div>
                         </div> 
                         <div className="our-process-item" id="our-process-item-4">
                             <div className="our-process-icon" id="our-process-icon-4"/>
-                            <div className="our-process-item-title">Results and Benefits</div>
-                            <div className="our-process-item-description">Deploy, monitor and help you save money and time!</div>
+                            <div className="our-process-item-title">{t("our_process_card_4_title")}</div>
+                            <div className="our-process-item-description">{t("our_process_card_4_description")}</div>
                         </div> 
                         <div id="our-process-list-description">
-                            <div id="our-process-list-description-title">Our Process</div>
-                            <div id="our-process-list-description-text">How we will renew your business step by step.</div>
+                            <div id="our-process-list-description-title">{t("our_process")}</div>
+                            <div id="our-process-list-description-text">{t("our_process_title_description")}</div>
                         </div>
                     </div>
                 </div>
@@ -90,13 +84,14 @@ function Homepage() {
                     </div>
                     <div id="homepage-contact-description-div">
                         <div id="homepage-contact-description-title">
-                            Ready to get<br/>started?
+                            {t("ready_to_get_started")}
                         </div>
                         <div id="homepage-contact-description-text-div">
                             <div id="homepage-contact-description-text">
-                                Call us at 000 000 000 or send us an email at hello@reallygreatsite.com
+                                {t("homepage_call_us")}
                             </div>
-                            <button id="homepage-contact-button">ASK FOR A DEMO TODAY &gt;</button>
+                            <Link to="/contacts"><button id="homepage-contact-button">{t("ask_for_demo")}&gt;</button></Link>
+
                         </div>
                     </div>
                 </div>
@@ -118,10 +113,10 @@ function Homepage() {
                 <div id="what-we-are-div-mobile">
                     <div id="what-we-are-text-div">
                         <div id="what-we-are-title-mobile">
-                            Your Partner in Digital Automation
+                            {t("homepage_description_title")}
                         </div>
                         <div id="what-we-are-description-mobile">
-                            We are BlazeTask. We empower your business by automating repetitive, tedious and costly data tasks. Save time, save resources, save money by allowing to transform your business operation!
+                        {t("homepage_description_text")}
                         </div>
                         <div id="homepage-what-are-we-bar"></div>
                     </div>
@@ -131,50 +126,50 @@ function Homepage() {
                     <div id="our-process-intro-mobile">
                         <div>
                             <div id="our-process-title-mobile">
-                                We guide your business  towards the future of <i>efficiency</i>.
+                                {t("our_process_title")}<i>{t("efficiency")}</i>.
                             </div>
                             <div id="our-process-description-mobile">
-                                We follow a simple but effective process in order to find ineficient processes within your business and build tools with the latest AI tehcnologies that will help mitigate these problems.
+                            {t("our_process_description")}
                             </div>
                         </div>
                     </div>
                     <div id="our-process-list-description-mobile">
-                            <div id="our-process-list-description-title-mobile">Our Process</div>
-                            <div id="our-process-list-description-text-mobile">How we will renew your business step by step.</div>
+                            <div id="our-process-list-description-title-mobile">{t("our_process")}</div>
+                            <div id="our-process-list-description-text-mobile">{t("our_process_title_description")}</div>
                     </div>
                     <div id="our-process-list-mobile">
                         <div className="our-process-item-mobile">
                             <div className="our-process-icon-mobile" id="our-process-icon-1"/>
-                            <div className="our-process-item-title-mobile">Understanding Operations</div>
-                            <div className="our-process-item-description-mobile">Explore client workflows to find automation opportunities.</div>
+                            <div className="our-process-item-title-mobile">{t("our_process_card_1_title")}</div>
+                            <div className="our-process-item-description-mobile">{t("our_process_card_1_description")}</div>
                         </div>
                         <div className="our-process-item-mobile">
                             <div className="our-process-icon-mobile" id="our-process-icon-2"/>
-                            <div className="our-process-item-title-mobile">Opportunity Evaluation</div>
-                            <div className="our-process-item-description-mobile">Strategically choose the most profitable digital enhancements</div>
+                            <div className="our-process-item-title-mobile">{t("our_process_card_2_title")}</div>
+                            <div className="our-process-item-description-mobile">{t("our_process_card_2_description")}</div>
                         </div> 
                         <div className="our-process-item-mobile">
                             <div className="our-process-icon-mobile"  id="our-process-icon-3"/>
-                            <div className="our-process-item-title-mobile">Implementing Automation</div>
-                            <div className="our-process-item-description-mobile">Develop applications to automate your tasks.</div>
+                            <div className="our-process-item-title-mobile">{t("our_process_card_3_title")}</div>
+                            <div className="our-process-item-description-mobile">{t("our_process_card_3_description")}</div>
                         </div> 
                         <div className="our-process-item-mobile">
                             <div className="our-process-icon-mobile" id="our-process-icon-4"/>
-                            <div className="our-process-item-title-mobile">Results and Benefits</div>
-                            <div className="our-process-item-description-mobile">Deploy, monitor and help you save money and time!</div>
+                            <div className="our-process-item-title-mobile">{t("our_process_card_4_title")}</div>
+                            <div className="our-process-item-description-mobile">{t("our_process_card_4_description")}</div>
                         </div> 
                     </div>
                 </div>
                 <div id="homepage-contact-us-mobile">
                     <div id="homepage-contact-description-div-mobile">
                         <div id="homepage-contact-description-title-mobile">
-                            Ready to get<br/>started?
+                        {t("ready_to_get_started")}
                         </div>
                         <div id="homepage-contact-description-text-div-mobile">
                             <div id="homepage-contact-description-text-mobile">
-                                Call us at 000 000 000 or send us an email at hello@reallygreatsite.com
+                            {t("homepage_call_us")}
                             </div>
-                            <button id="homepage-contact-button-mobile">ASK FOR A DEMO TODAY &gt;</button>
+                            <button id="homepage-contact-button-mobile">{t("ask_for_demo")} &gt;</button>
                         </div>
                     </div>
                 </div>
