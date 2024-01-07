@@ -12,14 +12,14 @@ function Homepage() {
         <div>
         {!isMobile?(
             <div id="homepage">
+            <Logo3d/>
                 <div id="homepage-header">
-                    <Logo3d/>
                     <div id="homepage-header-titles">
                         <div id="homepage-header-title">
                             BlazeTask
                         </div>
                         <div id="homepage-header-subtitle">
-                            Automation with brilliance
+                            Automating your future
                         </div>
                         <div id="homepage-header-title-bar"></div>
                     </div>
@@ -104,7 +104,7 @@ function Homepage() {
                             BlazeTask
                         </div>
                         <div id="homepage-header-subtitle-mobile">
-                            Automation with brilliance
+                            Automating your future
                         </div>
                         <div id="homepage-header-title-bar-mobile"></div>
                     </div>
