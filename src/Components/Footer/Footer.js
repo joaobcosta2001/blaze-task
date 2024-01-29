@@ -5,9 +5,9 @@ function Footer() {
     return(
         <div id="footer-div">
             <div id="footer-social-buttons">
-                <button className="footer-social-button" id="instagram-button"></button>
-                <button className="footer-social-button" id="linkedin-button"></button>
-                <button className="footer-social-button" id="facebook-button"></button>
+                <a href="https://www.instagram.com/blazetask/" target="_blank" rel="noreferrer"><button className="footer-social-button" id="instagram-button"></button></a>
+                <a href="https://www.facebook.com/profile.php?id=61554834218565" target="_blank" rel="noreferrer"><button className="footer-social-button" id="linkedin-button"></button></a>
+                <a href="https://www.linkedin.com/company/blazetask/about/" target="_blank" rel="noreferrer"><button className="footer-social-button" id="facebook-button"></button></a>
             </div>
 
             {/*<div id="footer-links">

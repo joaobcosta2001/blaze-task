@@ -1,7 +1,7 @@
 import { changeLanguage } from "i18next";
 import "./Navbar.css"
 import NavbarButton from "./NavbarButton/NavbarButton";
-import { useState,useEffect } from "react";
+import { useState } from "react";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -52,8 +52,8 @@ function Navbar() {
                 <Link to="/contacts"><NavbarButton title={t("CONTACTS")}/></Link>
                 <div id="language-button-div">
                     <div id="language-button-container">
-                        <div id={(language==="pt")?"language-button-background-div-pt":"language-button-background-div-en"}></div>
-                        <div id="language-button-background-text"><div className="language-button-text-container" onClick={toggleLanguage}>PT</div><div className="language-button-text-container">EN</div></div>
+                        <div id={(language==="pt")?"language-button-background-div-pt":"language-button-background-div-en"} onClick={toggleLanguage}></div>
+                        <div id="language-button-background-text"><div className="language-button-text-container" onClick={toggleLanguage}>PT</div><div className="language-button-text-container" onClick={toggleLanguage}>EN</div></div>
                         <div id={(language==="pt")?"language-button-foreground-text-pt":"language-button-foreground-text-en"} onClick={toggleLanguage}><div className="language-button-text-container">PT</div><div className="language-button-text-container">EN</div></div>
                     </div>
                 </div>

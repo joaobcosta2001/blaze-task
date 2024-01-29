@@ -8,24 +8,18 @@ body{
 }
 
 
-#homepage-header-initial{
-    position: relative;
-    opacity: 0;
-    margin-top: 8%;
-    left: -5%;
-    margin-left: 12.5%;
-    display: flex;
-}
-
-
 #homepage-header{
     position: relative;
     opacity: 1;
-    margin-top: 8%;
     left: 0;
-    margin-left: 12.5%;
+    padding-left: 12.5%;
     transition: 0.4s;
     display: flex;
+    height: 70vh;
+    padding-top: 30vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/blaze-task-buildings.png);
 }
 
 
@@ -33,10 +27,13 @@ body{
 #homepage-header-mobile{
     position: relative;
     opacity: 1;
-    margin-top: 20vh;
+    padding-top: 15vh;
     left: 0;
-    margin-left: 12.5%;
-    height: 80vh;
+    padding-left: 12.5vw;
+    height: 85vh;
+    background-image: url(../../assets/images/blaze-task-buildings-mobile.png);
+    background-size: auto 100%;
+    background-position: 50% 0;
 }
 
 #homepage-header-title{
@@ -119,7 +116,7 @@ body{
 
 #what-we-are-title-mobile{
     width: 70%;
-    color: #ef8e0d;
+    color: #ef8e0d; 
     font-family: open-sans;
     font-size: 40px;
     font-weight: 700;
@@ -154,8 +151,7 @@ body{
 #our-process-div{
     background-color: rgb(236, 236, 236);
     position: relative;
-    padding-left: 12.5%;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 15%;
     z-index: -2;
 }
@@ -163,26 +159,48 @@ body{
 #our-process-title{
     color: black;
     font-family: open-sans;
-    font-size: 60px;
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+#our-process-subtitle{
+    color: black;
+    font-family: open-sans;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 2%;
     width: 700px;
 }
 
 #our-process-description{
-    width: 70%;
+    color: black;
+    text-align: justify;
+    font-family: dm-sans;
+    font-size: 22px;
+    margin-bottom: 5%;
+}
+
+#our-process-description-mobile{
+    width: 65vw;
     color: black;
     font-family: dm-sans;
-    font-size: 25px;
+    font-size: 4.5vw;
     margin-bottom: 5%;
-    
 }
 
 #homepage-our-process-bar{
     background: rgb(255,0,0);
     background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
     width: 300px;
-    height: 20px;
+    height: 18px;
+    margin-top: 2%;
+}
+
+#homepage-our-process-bar-mobile{
+    background: rgb(255,0,0);
+    background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
+    width: 50vw;
+    height: 3vw;
     margin-top: 2%;
 }
 
@@ -209,16 +227,26 @@ body{
     z-index: -1;
 }
 
-#our-process-intro{
+#our-process-intro-div{
     display: flex;
+    justify-content: center;
+}
+
+#our-process-intro{
     margin-top: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+    width: 800px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.367);
 }
 
 #our-process-intro-mobile{
-    margin-left: 10%;
-    display: flex;
+    padding: 5vw;
     margin-top: 5%;
-    width: 80%;
+    margin-left: 10vw;
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.367);
 }
 
 #our-process-intro-image{
@@ -237,13 +265,13 @@ body{
     margin-top: 10%;
     position: relative;
     height: 700px;
+    margin-left: 12.5%;
 }
 
 .our-process-item{
     position: absolute;
     width: 250px;
     height: 250px;
-    border-radius: 30px;
     background-color: white;
     padding: 25px;
     box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.3);
@@ -355,44 +383,35 @@ body{
 #our-process-title-mobile{
     color: black;
     font-family: open-sans;
-    font-size: 35px;
+    font-size: 7vw;
     font-weight: 700;
     margin-bottom: 2%;
 }
 
-#our-process-description-mobile{
-    width: 100%;
-    color: black;
-    font-family: dm-sans;
-    font-size: 22px;
-    margin-bottom: 5%;
-    
-}
 
 
 #our-process-list-mobile{
     flex-shrink: 0;
     margin-top: 10%;
-    margin-left: 10vw;
+    margin-left: 15vw;
     position: relative;
 }
 
 .our-process-item-mobile{
     margin-bottom: 10vw;
-    width: 70vw;
+    width: 60vw;
     height: 70vw;
-    border-radius: 30px;
     background-color: white;
-    padding: 25px;
-    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.3);
+    padding: 5vw;
+    box-shadow: 3vw 3vw 10vw rgba(0, 0, 0, 0.3);
 }
 
 .our-process-icon-mobile{
     margin-left: 0vw;
     margin-top: 0vw;
     background-size: 100% 100%;
-    width: 100px;
-    height: 100px;
+    width: 20vw;
+    height: 20vw;
     margin-bottom: 5%;
 }
 
@@ -411,6 +430,7 @@ body{
     font-family: inter;
 }
 #our-process-list-description-mobile{
+    margin-bottom: 20vw;
     margin-left: 10vw;
 }
 
@@ -423,12 +443,12 @@ body{
 
 .our-process-item-description-mobile{
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 4vw;
     color: rgb(90, 90, 90);
     font-family: inter;
     font-weight: 300;
     margin-left: 5vw;
-    width: 63vw;
+    width: 50vw;
 }
 
 #homepage-contact-us-mobile{
@@ -474,20 +494,24 @@ body{
     background-color: black;
     padding-bottom: 200px;
     padding-top: 70px;
+    position: relative;
 }
 
 #homepage-contact-description-div{
     padding-left: 10vw;
-    display: flex;
     padding-top: 100px;
+    position: relative;
+    z-index: 3;
 }
 
 #homepage-contact-description-title{
-    width: 50%;
-    font-family: safira-march;
+    font-family: dm-sans;
+    letter-spacing: 0.2em;
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     line-height: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 #homepage-contact-description-text{
@@ -495,7 +519,8 @@ body{
     font-family: dm-sans;
     color: white;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 600px;
 }
 
 #homepage-contact-button{
@@ -503,41 +528,193 @@ body{
     color: white;
     background: rgb(255,0,0);
     background: linear-gradient(49deg, rgba(255,0,0,1) 0%, #ff914d 100%);
-    width: 300px;
-    height: 40px;
-    font-size: 20px;
+    width: 500px;
+    height: 60px;
+    font-size: 30px;
     border: none;
-    border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
     cursor: pointer;
 }
 
-#homepage-contact-us-images{
-    display: flex;
-    text-align: center;
-}
-
 .homepage-contact-us-image{
+    position: absolute;
+    right: 100px;
+    top: 0;
     margin-left: 10vw;
     width: 600px;
-    height: 400px;
-    border-radius: 30px;
-}
-
-#homepage-contact-us-image-1{
-    background-image: url(../../assets/images/meeting-stock-1.jpg);
-}
-
-
-#homepage-contact-us-image-2{
-    margin-left: 40px;
-    background-image: url(../../assets/images/meeting-stock-2.jpg);
+    height: 600px;
+    background-size: 110% 100%;
+    background-image: url(../../assets/images/logo-3d-2.png);
 }
 
 #homepage-mobile{
     overflow-x: hidden;
 }
 
-#homepage-contact-description-text-div{
+#homepage-stats-title{
+    color: white;
+    font-family: dm-sans;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 0.15em;
+}
+
+#homepage-stats-subtitle{
+    color: var(--red-orange);
+    font-family: dm-sans;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#homepage-stats-div{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#homepage-stats-div-mobile{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    padding-top: 15vw;
+    padding-bottom: 200px;
+}
+
+#homepage-stats-title-mobile{
+    color: white;
+    font-family: dm-sans;
+    font-weight: 700;
+    font-size: 7vw;
+    letter-spacing: 0.15em;
+}
+
+#stay-ahead{
+    font-size: 8vw;
+}
+
+#homepage-stats-subtitle-mobile{
+    color: var(--red-orange);
+    font-family: dm-sans;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#homepage-stats-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage-stats-item{
+    padding-top: 50px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    width: 300px;
+    height: 500px; background: rgb(29,29,29);
+    background: linear-gradient(0deg, rgb(47, 47, 47) 0%, rgba(0,0,0,1) 100%); 
+}
+
+.homepage-stats-item-image{
+    color: white;
+    font-family: dm-sans;
+    font-size: 60px;
+    font-weight: 600;
+    background-size: 100% 100%;
+    width: 220px;
+    height: 220px;
     margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#wheel-70-percent{
+    background-image: url(../../assets/images/70_percent_wheel.svg);
+}
+
+#wheel-27-percent{
+    background-image: url(../../assets/images/27_percent_wheel.svg);
+}
+
+#wheel-95-percent{
+    background-image: url(../../assets/images/95_percent_wheel.svg);
+}
+
+.homepage-stats-item-description{
+    color: white;
+    font-family: dm-sans;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+
+
+#homepage-stats-list-mobile{
+    
+}
+
+.homepage-stats-item-mobile{
+    padding-top: 10vw;
+    text-align: center;
+    margin-left: 15vw;
+    position: relative;
+    width: 70vw;
+    height: 100vw; background: rgb(29,29,29);
+    background: linear-gradient(0deg, rgb(47, 47, 47) 0%, rgba(0,0,0,1) 100%); 
+}
+
+.homepage-stats-item-image-mobile{
+    color: white;
+    font-family: dm-sans;
+    font-size: 60px;
+    font-weight: 600;
+    background-size: 100% 100%;
+    width: 45vw;
+    height: 45vw;
+    margin-left: 12.5vw;
+    margin-top: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.homepage-stats-item-description-mobile{
+    color: white;
+    font-family: dm-sans;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 4vw;
+    margin-top: 10vw;
+}
+
+
+#homepage-stats-reference{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color:rgb(163, 163, 163);
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+
+#blaze-task-color{
+    color: rgb(255, 94, 0);
 }

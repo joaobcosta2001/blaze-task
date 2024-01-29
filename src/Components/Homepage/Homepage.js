@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Homepage.css"
-import Logo3d from "./Logo3d/Logo3d";
 import { isMobile } from "react-device-detect";
 import { useTranslation } from "react-i18next";
+import {easeOut, motion} from "framer-motion"
 
 function Homepage() {
 
@@ -12,9 +12,9 @@ function Homepage() {
         <div>
         {!isMobile?(
             <div id="homepage">
-            <Logo3d/>
+            
                 <div id="homepage-header">
-                    <div id="homepage-header-titles">
+                    <motion.div id="homepage-header-titles" initial={{opacity:0, x:"-10vw"}} whileInView={{opacity:1,x:0}} transition={{delay:0.2, ease:easeOut}}>
                         <div id="homepage-header-title">
                             BlazeTask
                         </div>
@@ -22,34 +22,60 @@ function Homepage() {
                             Automating your future
                         </div>
                         <div id="homepage-header-title-bar"></div>
-                    </div>
+                    </motion.div>
                 </div>
-                <div id="what-we-are-div">
-                    <div id="what-we-are-text-div">
-                        <div id="what-we-are-title">
-                            {t("homepage_description_title")}
-                        </div>
-                        <div id="what-we-are-description">
-                            {t("homepage_description_text")}
-                        </div>
-                        <div id="homepage-what-are-we-bar"></div>
+                <div id="homepage-stats-div">
+                    <div id="homepage-stats-title">
+                        STAY AHEAD, IMPLEMENT AI
                     </div>
-                    <div id="what-we-are-image"/>
+                    <div id="homepage-stats-subtitle">
+                        We will help you
+                    </div>
+                    <div id="homepage-stats-list">
+                        <motion.div className="homepage-stats-item"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}}>
+                            <div className="homepage-stats-item-image" id="wheel-70-percent">
+                                70%
+                            </div>
+                            <div className="homepage-stats-item-description">
+                                of companies are actively developing training programs for their staff to handle generative AI tools adeptly
+                            </div>
+                        </motion.div>
+                        <motion.div className="homepage-stats-item"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.2}}>
+                            <div className="homepage-stats-item-image" id="wheel-27-percent">
+                                27%
+                            </div>
+                            <div className="homepage-stats-item-description">
+                            cost reduction, providing businesses with substantial savings and enhanced financial performance.
+
+                            </div>
+                        </motion.div>
+                        <motion.div className="homepage-stats-item" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.4}}>
+                            <div className="homepage-stats-item-image" id="wheel-95-percent">
+                                95%
+                            </div>
+                            <div className="homepage-stats-item-description">
+                                of companies have recently ramped up their AI investment, marking a noticeable increase within a three-month timeframe
+                            </div>
+                        </motion.div>
+                    </div>
+                    <div>
+                        <a id="homepage-stats-reference" href="https://www.forbes.com/sites/forbescontentmarketing/2022/01/07/research-shows-cxos-plan-to-do-more-good-in-2022/">From a CxO Pulse Survey</a>
+                    </div>
                 </div>
                 <div id="our-process-div">
                     <div id="our-process-polygon"></div>
-                    <div id="our-process-intro">
-                        <div id="our-process-intro-image"/>
-                        <div>
+                    <motion.div id="our-process-intro-div" initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{ease:easeOut}}>
+                        <div id="our-process-intro">
                             <div id="our-process-title">
-                               {t("our_process_title")} <i>{t("efficiency")}</i>.
+                               We are <span id="blaze-task-color">BlazeTask</span>. 
+                               We will guide your business towards the future of <i>efficiency</i>.
                             </div>
                             <div id="our-process-description">
                                 {t("our_process_description")}
                             </div>
                             <div id="homepage-our-process-bar"></div>
                         </div>
-                    </div>
+                    </motion.div>
                     <div id="our-process-list">
                         <div className="our-process-item" id="our-process-item-1">
                             <div className="our-process-icon" id="our-process-icon-1"/>
@@ -78,10 +104,7 @@ function Homepage() {
                     </div>
                 </div>
                 <div id="homepage-contact-us">
-                    <div id="homepage-contact-us-images">
-                        <div id="homepage-contact-us-image-1" className="homepage-contact-us-image"/>
-                        <div id="homepage-contact-us-image-2" className="homepage-contact-us-image"/>
-                    </div>
+                    <div id="homepage-contact-us-image-1" className="homepage-contact-us-image"/>
                     <div id="homepage-contact-description-div">
                         <div id="homepage-contact-description-title">
                             {t("ready_to_get_started")}
@@ -90,7 +113,7 @@ function Homepage() {
                             <div id="homepage-contact-description-text">
                                 {t("homepage_call_us")}
                             </div>
-                            <Link to="/contacts"><button id="homepage-contact-button">{t("ask_for_demo")}&gt;</button></Link>
+                            <Link to="/contacts"><button id="homepage-contact-button"><motion.div initial={{x:-50,opacity:0}} whileInView={{x:0,opacity:1}} transition={{ease:easeOut,duration:0.5}}>{t("ask_for_demo")}&gt;</motion.div></button></Link>
 
                         </div>
                     </div>
@@ -108,31 +131,59 @@ function Homepage() {
                         </div>
                         <div id="homepage-header-title-bar-mobile"></div>
                     </div>
-                    <Logo3d/>
                 </div>
-                <div id="what-we-are-div-mobile">
-                    <div id="what-we-are-text-div">
-                        <div id="what-we-are-title-mobile">
-                            {t("homepage_description_title")}
-                        </div>
-                        <div id="what-we-are-description-mobile">
-                        {t("homepage_description_text")}
-                        </div>
-                        <div id="homepage-what-are-we-bar"></div>
+                <div id="homepage-stats-div-mobile">
+                    <div id="homepage-stats-title-mobile">
+                        <span id="stay-ahead">STAY AHEAD,</span> IMPLEMENT AI
+                    </div>
+                    <div id="homepage-stats-subtitle-mobile">
+                        We will help you
+                    </div>
+                    <div id="homepage-stats-list-mobile">
+                        <motion.div className="homepage-stats-item-mobile"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}}>
+                            <div className="homepage-stats-item-image-mobile" id="wheel-70-percent">
+                                70%
+                            </div>
+                            <div className="homepage-stats-item-description-mobile">
+                                of companies are actively developing training programs for their staff to handle generative AI tools adeptly
+                            </div>
+                        </motion.div>
+                        <motion.div className="homepage-stats-item-mobile"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.2}}>
+                            <div className="homepage-stats-item-image-mobile" id="wheel-27-percent">
+                                27%
+                            </div>
+                            <div className="homepage-stats-item-description-mobile">
+                            cost reduction, providing businesses with substantial savings and enhanced financial performance.
+
+                            </div>
+                        </motion.div>
+                        <motion.div className="homepage-stats-item-mobile" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.4}}>
+                            <div className="homepage-stats-item-image-mobile" id="wheel-95-percent">
+                                95%
+                            </div>
+                            <div className="homepage-stats-item-description-mobile">
+                                of companies have recently ramped up their AI investment, marking a noticeable increase within a three-month timeframe
+                            </div>
+                        </motion.div>
+                    </div>
+                    <div>
+                        <a id="homepage-stats-reference" href="https://www.forbes.com/sites/forbescontentmarketing/2022/01/07/research-shows-cxos-plan-to-do-more-good-in-2022/">From a CxO Pulse Survey</a>
                     </div>
                 </div>
                 <div id="our-process-div-mobile">
                     <div id="our-process-polygon-mobile"></div>
-                    <div id="our-process-intro-mobile">
-                        <div>
+                    <motion.div id="our-process-intro-div-mobile" initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{ease:easeOut}}>
+                        <div id="our-process-intro-mobile">
                             <div id="our-process-title-mobile">
-                                {t("our_process_title")}<i>{t("efficiency")}</i>.
+                               We are <span id="blaze-task-color">BlazeTask</span>. 
+                               We will guide your business towards the future of <i>efficiency</i>.
                             </div>
                             <div id="our-process-description-mobile">
-                            {t("our_process_description")}
+                                {t("our_process_description")}
                             </div>
+                            <div id="homepage-our-process-bar-mobile"></div>
                         </div>
-                    </div>
+                    </motion.div>
                     <div id="our-process-list-description-mobile">
                             <div id="our-process-list-description-title-mobile">{t("our_process")}</div>
                             <div id="our-process-list-description-text-mobile">{t("our_process_title_description")}</div>
