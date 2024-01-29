@@ -141,7 +141,7 @@
 }
 
 
-.services-progress-dot{
+.services-progress-dot-white{
     position: absolute;
     left: 82.5px;
     top:150px;
@@ -149,9 +149,22 @@
     width: 40px;
     height:40px;
     border-radius: 20px;
+    z-index: 5;
+}
+
+.services-progress-dot-orange{
+    position: absolute;
+    left: 82.5px;
+    top:150px;
+    background: #ff3131;
+    background: linear-gradient(45deg, #ff3131 0%, #ff914d 100%);
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    z-index: 5;
 }
 
 .service-progress-bar-orange{
-    background: rgb(255,0,0);
-    background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
+    background: #ff3131;
+    background: linear-gradient(0deg, #ff3131 0%, #ff914d 100%);
 }

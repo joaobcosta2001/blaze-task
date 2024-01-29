@@ -74,7 +74,7 @@ function Services() {
 
                 <div className='services-step-div blazetask-fade-background'>
                     <div id="services-progress-bar-1" className='services-progress-bar service-progress-bar-white'/>
-                    <div className='services-progress-dot'/>
+                    <div className='services-progress-dot-white'/>
                     <div className='services-step-contents'>
                         <div>
 
@@ -94,7 +94,7 @@ function Services() {
                 
                 <div className='services-step-div light-gray-background'>
                     <div id="services-progress-bar-2" className='services-progress-bar service-progress-bar-orange'/>
-                    <div className='services-progress-dot'/>
+                    <div className='services-progress-dot-orange'/>
                     <div className='services-step-contents'>
                         <div>
                             <div className='services-step-number'>
@@ -112,7 +112,7 @@ function Services() {
                 </div>
                 <div className='services-step-div blazetask-fade-background'>
                     <div id="services-progress-bar-3" className='services-progress-bar service-progress-bar-white'/>
-                    <div className='services-progress-dot'/>
+                    <div className='services-progress-dot-white'/>
                     <div className='services-step-contents'>
                         <div>
                             <div className='services-step-number'>
@@ -131,7 +131,7 @@ function Services() {
                 
                 <div className='services-step-div light-gray-background'>
                     <div id="services-progress-bar-4" className='services-progress-bar service-progress-bar-orange'/>
-                    <div className='services-progress-dot'/>
+                    <div className='services-progress-dot-orange'/>
                     <div className='services-step-contents'>
                         <div>
                             <div className='services-step-number'>
