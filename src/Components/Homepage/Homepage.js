@@ -133,7 +133,7 @@ function Homepage() {
                 </div>
                 <div id="homepage-stats-div-mobile">
                     <div id="homepage-stats-title-mobile">
-                        <span id="stay-ahead">STAY AHEAD,</span> IMPLEMENT AI
+                        <span id="stay-ahead">{t("homepage_stats_stay_ahead")},</span> {t("homepage_stats_implement_ai")}
                     </div>
                     <div id="homepage-stats-subtitle-mobile">
                         {t("homepage_stats_subtitle")}

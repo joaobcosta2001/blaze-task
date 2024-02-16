@@ -49,7 +49,7 @@ function Navbar() {
             <div id="navbar">
                 <Link to="/"><NavbarButton title={t("HOME")}/></Link>
                 <Link to="/about-us"><NavbarButton title={t("ABOUT_US")}/></Link>
-                <Link to="/services"><NavbarButton title={t("SERVICES")}/></Link>
+                <Link to="/process"><NavbarButton title={t("SERVICES")}/></Link>
                 <Link to="/contacts"><NavbarButton title={t("CONTACTS")}/></Link>
                 <div id="language-button-div">
                     <div id="language-button-container">
@@ -60,7 +60,7 @@ function Navbar() {
                 </div>
             </div>
         ):(
-            <div id="mobile-navbar">
+            <div id={isMobileNavbarOpen?"mobile-navbar":"mobile-navbar-hidden"}>
                 <button id="mobile-navbar-toggle-button" onClick={toggleNavbar}>
                     {!isMobileNavbarOpen?(
                         <div>
@@ -81,8 +81,8 @@ function Navbar() {
                 <div id={isMobileNavbarOpen?"mobile-navbar-overlay":"mobile-navbar-overlay-hidden"}>
                     <div id="language-button-div-mobile">
                         <div id="language-button-container-mobile">
-                            <div id={(language==="pt")?"language-button-background-div-pt-mobile":"language-button-background-div-en-mobile"}></div>
-                            <div id="language-button-background-text-mobile"><div className="language-button-text-container-mobile" onClick={toggleLanguage}>PT</div><div className="language-button-text-container-mobile">EN</div></div>
+                            <div id={(language==="pt")?"language-button-background-div-pt-mobile":"language-button-background-div-en-mobile"} onClick={toggleLanguage}></div>
+                            <div id="language-button-background-text-mobile"><div className="language-button-text-container-mobile" onClick={toggleLanguage}>PT</div><div className="language-button-text-container-mobile" onClick={toggleLanguage}>EN</div></div>
                             <div id={(language==="pt")?"language-button-foreground-text-pt-mobile":"language-button-foreground-text-en-mobile"} onClick={toggleLanguage}><div className="language-button-text-container-mobile">PT</div><div className="language-button-text-container-mobile">EN</div></div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ function Navbar() {
                     <Link to="/about-us" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
                         {t("ABOUT_US")}
                     </button></Link>
-                    <Link to="/services" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
+                    <Link to="/process" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
                         {t("SERVICES")}
                     </button></Link>
                     <Link to="/contacts" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>

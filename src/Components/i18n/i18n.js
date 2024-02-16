@@ -54,6 +54,8 @@ const resources = {
             about_us_partners:"Partners",
 
             homepage_stats_title:"STAY AHEAD, IMPLEMENT AI",
+            homepage_stats_stay_ahead:"STAY AHEAD",
+            homepage_stats_implement_ai:"IMPLEMENT AI",
             homepage_stats_subtitle:"We will help you",
             homepage_stats_1:"of companies are actively developing training programs for their staff to handle generative AI tools adeptly",
             homepage_stats_2:"cost reduction, providing businesses with substantial savings and enhanced financial performance",
@@ -125,6 +127,8 @@ const resources = {
             about_us_partners:"Colaboradores",
             
             homepage_stats_title:"PERMANEÇA NA VANGUARDA, IMPLEMENTE AI",
+            homepage_stats_stay_ahead:"PERMANEÇA NA VANGUARDA",
+            homepage_stats_implement_ai:"IMPLEMENTE AI",
             homepage_stats_subtitle:"Nós ajudamo-lo",
             homepage_stats_1:"das empresas estão ativamente a desenvolver formações para que os seus funcionários possam lidar de modo eficaz com ferramentas de AI generativas",
             homepage_stats_2:"redução de custos, proporcionando às empresas uma economização substancial e melhor desempenho financeiro",
