@@ -108,6 +108,7 @@
 }
 
 .services-step-contents-mobile{
+    position: relative;
     display: flex;
     padding-top: 20vw;
     padding-bottom: 20vw;
@@ -143,7 +144,7 @@
 
 .services-progress-dot-white{
     position: absolute;
-    left: 82.5px;
+    left: 83px;
     top:150px;
     background-color: white;
     width: 40px;
@@ -154,7 +155,7 @@
 
 .services-progress-dot-orange{
     position: absolute;
-    left: 82.5px;
+    left: 83px;
     top:150px;
     background: #ff3131;
     background: linear-gradient(45deg, #ff3131 0%, #ff914d 100%);
@@ -167,4 +168,11 @@
 .service-progress-bar-orange{
     background: #ff3131;
     background: linear-gradient(0deg, #ff3131 0%, #ff914d 100%);
+}
+
+.services-step-image-mobile{
+    position: absolute;
+    width: 40vw;
+    top:10vw;
+    right: 10vw;
 }

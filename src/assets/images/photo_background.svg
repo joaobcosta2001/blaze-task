@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="800"
+   viewBox="0 0 158.75 211.66667"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="photo_background.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="800px"
+     inkscape:snap-page="true"
+     inkscape:zoom="0.32026164"
+     inkscape:cx="67.13261"
+     inkscape:cy="-160.80602"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient852">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1"
+         offset="0"
+         id="stop848" />
+      <stop
+         style="stop-color:#ffd000;stop-opacity:1"
+         offset="1"
+         id="stop850" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient852"
+       id="linearGradient854"
+       x1="59.895691"
+       y1="243.71349"
+       x2="177.20862"
+       y2="78.484009"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3532146,0,0,1.2823361,-81.051556,-100.64299)" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect846"
+       style="fill:url(#linearGradient854);stroke-width:2.85195;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       d="M 0,0 V 24.820137 L 128.31607,211.87934 h 22.66759 L 5.6425968,0 Z M 15.339691,0 158.75,209.06435 V 176.0192 L 38.007276,0 Z M 47.70437,0 158.75,161.88256 V 128.83742 L 70.372652,0 Z M 80.069751,0 158.75,114.70078 V 81.654969 L 102.73733,0 Z M 112.43443,0 158.75,67.518989 V 34.473846 L 135.10271,0 Z M 144.79912,0 158.75,20.337205 V 0 Z M 0,38.956117 V 72.00126 L 95.950695,211.87934 H 118.61898 Z M 0,86.1379 v 33.04513 l 63.586017,92.69631 h 22.66758 z m 0,47.1818 v 33.04579 l 31.220636,45.51385 h 22.668282 z m 0,47.18177 v 31.37787 h 21.523542 z" />
+  </g>
+</svg>

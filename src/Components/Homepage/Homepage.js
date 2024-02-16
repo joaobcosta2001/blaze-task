@@ -26,10 +26,10 @@ function Homepage() {
                 </div>
                 <div id="homepage-stats-div">
                     <div id="homepage-stats-title">
-                        STAY AHEAD, IMPLEMENT AI
+                        {t("homepage_stats_title")}
                     </div>
                     <div id="homepage-stats-subtitle">
-                        We will help you
+                        {t("homepage_stats_subtitle")}
                     </div>
                     <div id="homepage-stats-list">
                         <motion.div className="homepage-stats-item"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}}>
@@ -37,7 +37,7 @@ function Homepage() {
                                 70%
                             </div>
                             <div className="homepage-stats-item-description">
-                                of companies are actively developing training programs for their staff to handle generative AI tools adeptly
+                                {t("homepage_stats_1")}
                             </div>
                         </motion.div>
                         <motion.div className="homepage-stats-item"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.2}}>
@@ -45,8 +45,7 @@ function Homepage() {
                                 27%
                             </div>
                             <div className="homepage-stats-item-description">
-                            cost reduction, providing businesses with substantial savings and enhanced financial performance.
-
+                                {t("homepage_stats_2")}
                             </div>
                         </motion.div>
                         <motion.div className="homepage-stats-item" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.4}}>
@@ -54,12 +53,12 @@ function Homepage() {
                                 95%
                             </div>
                             <div className="homepage-stats-item-description">
-                                of companies have recently ramped up their AI investment, marking a noticeable increase within a three-month timeframe
+                                {t("homepage_stats_3")}
                             </div>
                         </motion.div>
                     </div>
                     <div>
-                        <a id="homepage-stats-reference" href="https://www.forbes.com/sites/forbescontentmarketing/2022/01/07/research-shows-cxos-plan-to-do-more-good-in-2022/">From a CxO Pulse Survey</a>
+                        <a id="homepage-stats-reference" href="https://www.forbes.com/sites/forbescontentmarketing/2022/01/07/research-shows-cxos-plan-to-do-more-good-in-2022/" target="_blank" rel="noreferrer">From a CxO Pulse Survey</a>
                     </div>
                 </div>
                 <div id="our-process-div">
@@ -67,8 +66,8 @@ function Homepage() {
                     <motion.div id="our-process-intro-div" initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{ease:easeOut}}>
                         <div id="our-process-intro">
                             <div id="our-process-title">
-                               We are <span id="blaze-task-color">BlazeTask</span>. 
-                               We will guide your business towards the future of <i>efficiency</i>.
+                               {t("homepage_we_are")} <span id="blaze-task-color">BlazeTask</span>. 
+                              {t("our_process_title")} <i>{t("efficiency")}</i>.
                             </div>
                             <div id="our-process-description">
                                 {t("our_process_description")}
@@ -137,7 +136,7 @@ function Homepage() {
                         <span id="stay-ahead">STAY AHEAD,</span> IMPLEMENT AI
                     </div>
                     <div id="homepage-stats-subtitle-mobile">
-                        We will help you
+                        {t("homepage_stats_subtitle")}
                     </div>
                     <div id="homepage-stats-list-mobile">
                         <motion.div className="homepage-stats-item-mobile"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5}}>
@@ -145,7 +144,7 @@ function Homepage() {
                                 70%
                             </div>
                             <div className="homepage-stats-item-description-mobile">
-                                of companies are actively developing training programs for their staff to handle generative AI tools adeptly
+                        {t("homepage_stats_1")}
                             </div>
                         </motion.div>
                         <motion.div className="homepage-stats-item-mobile"  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.2}}>
@@ -153,7 +152,7 @@ function Homepage() {
                                 27%
                             </div>
                             <div className="homepage-stats-item-description-mobile">
-                            cost reduction, providing businesses with substantial savings and enhanced financial performance.
+                        {t("homepage_stats_2")}
 
                             </div>
                         </motion.div>
@@ -162,7 +161,7 @@ function Homepage() {
                                 95%
                             </div>
                             <div className="homepage-stats-item-description-mobile">
-                                of companies have recently ramped up their AI investment, marking a noticeable increase within a three-month timeframe
+                        {t("homepage_stats_3")}
                             </div>
                         </motion.div>
                     </div>
@@ -175,8 +174,8 @@ function Homepage() {
                     <motion.div id="our-process-intro-div-mobile" initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{ease:easeOut}}>
                         <div id="our-process-intro-mobile">
                             <div id="our-process-title-mobile">
-                               We are <span id="blaze-task-color">BlazeTask</span>. 
-                               We will guide your business towards the future of <i>efficiency</i>.
+                               {t("homepage_we_are")} <span id="blaze-task-color">BlazeTask</span>. 
+                               {t("our_process_title")} <i>{t("efficiency")}</i>.
                             </div>
                             <div id="our-process-description-mobile">
                                 {t("our_process_description")}

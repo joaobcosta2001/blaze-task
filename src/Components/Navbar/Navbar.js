@@ -5,7 +5,6 @@ import { useState } from "react";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import i18n from "../i18n/i18n";
 
 function Navbar() {
 
@@ -33,13 +32,15 @@ function Navbar() {
     }
 
     const toggleLanguage = ()=>{
-        console.log("Current language: " + i18n.language)
         if(language === "pt"){
+            console.log("Changing to english")
             setLanguage("en")
+            changeLanguage("en")
         }else{
             setLanguage("pt")
+            changeLanguage("pt")
+            console.log("Changing to portuguese")
         }
-        changeLanguage(language)
     }
 
     return (
@@ -47,7 +48,7 @@ function Navbar() {
         {!isMobile?(
             <div id="navbar">
                 <Link to="/"><NavbarButton title={t("HOME")}/></Link>
-                <Link to="/aboute-us"><NavbarButton title={t("ABOUT_US")}/></Link>
+                <Link to="/about-us"><NavbarButton title={t("ABOUT_US")}/></Link>
                 <Link to="/services"><NavbarButton title={t("SERVICES")}/></Link>
                 <Link to="/contacts"><NavbarButton title={t("CONTACTS")}/></Link>
                 <div id="language-button-div">
@@ -88,7 +89,7 @@ function Navbar() {
                     <Link to="/" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
                         {t("HOME")}
                     </button></Link>
-                    <Link to="/abput-us" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
+                    <Link to="/about-us" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
                         {t("ABOUT_US")}
                     </button></Link>
                     <Link to="/services" className="mobile-navbar-link" onClick={changePage}><button className="mobile-navbar-button" disabled={!isMobileNavbarOpen}>
