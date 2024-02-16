@@ -71,6 +71,7 @@ const resources = {
             process_section_description_3:"Armed with insights from the evaluation phase, we seamlessly integrate automation solutions using cutting-edge tools like Zapier and Python programming. Our expert team designs custom scripts and workflows tailored to your specific needs, ensuring a smooth transition into a more efficient and automated work environment.",
             process_section_description_4:"The implementation of automation isn't just a process; it's a pathway to tangible results. We continuously monitor and optimize automated workflows, providing you with transparent reports on the realized benefits. Expect increased efficiency, reduced operational costs, and a transformed business landscape that positions you at the forefront of innovation.",
 
+            page_not_found:"Page not found.",
         },
     },
     // Add translations for other languages here
@@ -141,6 +142,7 @@ const resources = {
             process_section_description_3:"Munidos com todo o conhecimento adquirido nas fases anteriores, integramos soluções de automação no seu negócio usando tecnologias de ponta como Zapier e scripts Python feitos à medida. A nossa equipa de especialistas projetará estes sistemas e criará fluxos de trabalho personalizados de acordo com suas necessidades específicas, garantindo uma transição suave para um ambiente de trabalho mais eficiente e automatizado.",
             process_section_description_4:"A implementação de processos automáticos não é apenas um processo; é um caminho para resultados tangíveis. Monitoramos e otimizamos continuamente fluxos de trabalho automatizados, fornecendo relatórios transparentes sobre os benefícios obtidos. Espere maior eficiência, custos operacionais reduzidos e um cenário de negócios transformado que o posicionará na vanguarda da inovação.",
 
+            page_not_found:"Página não encontrada.",
         }
     }
 };

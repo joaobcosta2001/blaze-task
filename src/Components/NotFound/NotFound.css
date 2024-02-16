@@ -1,0 +1,32 @@
+#not-found-div-mobile{
+    text-align: center;
+    padding-top: 50vw;
+}
+
+#page_not_found_text_mobile{
+    font-family: dm-sans;
+    font-weight: 500;
+    font-size: 5vw;
+    margin-bottom: 50vw;
+}
+
+#page_not_found_image_mobile{
+    width: 50vw;
+}
+
+#not-found-div{
+    text-align: center;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+#page-not-found-text{
+    font-family: dm-sans;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+#page-not-found-image{
+    width: 300px;
+}

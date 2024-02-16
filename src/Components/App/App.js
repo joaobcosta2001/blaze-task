@@ -7,6 +7,7 @@ import "../i18n/i18n";
 import Footer from '../Footer/Footer';
 import Contacts from '../Contacts/Contacts';
 import AboutUs from '../AboutUs/AboutUs'
+import NotFound from '../NotFound/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/process" element={<Services/>}/>
         <Route path="/contacts" element={<Contacts/>}/>
         <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>
