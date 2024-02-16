@@ -79,8 +79,10 @@
 
 
 #services-title-mobile{
-    font-family: open-sans;
-    font-size: 20vw;
+    font-family: aileron;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    font-size: 16vw;
     line-height: 20vw;
     font-weight: 700;
     width: 100vw;

@@ -174,7 +174,7 @@ function Homepage() {
                     <motion.div id="our-process-intro-div-mobile" initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{ease:easeOut}}>
                         <div id="our-process-intro-mobile">
                             <div id="our-process-title-mobile">
-                               {t("homepage_we_are")} <span id="blaze-task-color">BlazeTask</span>. 
+                               {t("homepage_we_are")} <span id="blaze-task-color">BlazeTask</span>.&nbsp;
                                {t("our_process_title")} <i>{t("efficiency")}</i>.
                             </div>
                             <div id="our-process-description-mobile">

@@ -164,7 +164,7 @@ function Services() {
             <div id="services-page-mobile">
                 <div id="services-title-div-mobile">
                     <div id="services-title-mobile">
-                       {t("process_title")}
+                       {t("process_title_mobile")}
                     </div>
                     <div id="services-title-bar-mobile"/>
                 </div>

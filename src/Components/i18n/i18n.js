@@ -61,6 +61,7 @@ const resources = {
             homepage_we_are:"We are",
 
             process_title:"Our Process",
+            process_title_mobile:"Process",
             process_section_title_1:"Understanding Operations",
             process_section_title_2:"Task Evaluation",
             process_section_title_3:"Implementing Automation",
@@ -127,9 +128,10 @@ const resources = {
             homepage_stats_1:"das empresas estão ativamente a desenvolver formações para que os seus funcionários possam lidar de modo eficaz com ferramentas de AI generativas",
             homepage_stats_2:"redução de custos, proporcionando às empresas uma economização substancial e melhor desempenho financeiro",
             homepage_stats_3:"das empresas aumentaram recentemente o seu investimento em IA, registando-se um aumento notável num período de três meses",
-            homepage_we_are:"We are",
+            homepage_we_are:"Nós somos a ",
 
             process_title:"O Processo",
+            process_title_mobile:"Processo",
             process_section_title_1:"Compreender Operações",
             process_section_title_2:"Avaliar Oportunidades",
             process_section_title_3:"Implementar Automação",
