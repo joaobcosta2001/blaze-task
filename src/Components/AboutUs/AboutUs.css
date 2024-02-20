@@ -113,7 +113,7 @@
 }
 
 #about-us-step-into-blazetask-step-into-mobile{
-    padding-top: 30vw;
+    padding-top: 15vw;
     width: 100%;
     background-color: black;
     color: white;
@@ -137,12 +137,12 @@
     font-size: 8vw;
     letter-spacing: -0.1em;
     display: flex;
-    padding: 4vw 0;
+    padding: 2vw 0;
 }
 
 .about-us-step-into-blazetask-value-caroussel-part{
     display: flex;
-    animation: slide 15s linear infinite;
+    animation: slide 40s linear infinite;
 }
 
 .about-us-step-into-blazetask-value-item{
@@ -163,18 +163,19 @@
 
 .about-us-step-into-blazetask-value-item-mobile{
     font-family: aileron;
-    margin-left: 40px;
     text-transform: uppercase;
+    font-size: 7vw;
 }
 
 
 .about-us-step-into-blazetask-dots-mobile{
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     background-color: black;
     border-radius: 3vw;
     margin-top: 2.5vw;
-    margin-left: 50px;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
 @keyframes slide {
@@ -211,7 +212,7 @@
     font-weight: 900;
     letter-spacing: -0.1em;
     line-height: 15vw;
-    padding-bottom: 40vw;
+    padding-bottom: 20vw;
     
 }
 
@@ -279,10 +280,11 @@
 }
 
 .about-us-partner-position-mobile{
+    display: flex;
     font-family: dm-sans;
     padding-bottom: 15px;
     padding-top: 2vw;
-    font-size: 7vw;
+    font-size: 6.5vw;
     font-weight: 600;
 }
 
@@ -323,12 +325,12 @@
 }
 
 .about-us-partner-linkedin-button-mobile{
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
     background-size: 100% 100%;
     background-image: url(../../assets/images/linkedin-icon-black.svg);
-    margin-bottom: 5vw;
-    margin-left: 35vw;
+    margin-top: 0.8vw;
+    margin-left: 3vw;
 }
 
 #about-us-partners-title{

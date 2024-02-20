@@ -205,11 +205,11 @@ function AboutUs() {
                         </div>
                         <div className='about-us-partner-position-mobile'>
                             {t("CEO")}
+                            <a href='https://www.linkedin.com/in/diogocordeiro-feup/' target='_blank' rel='noreferrer'><div className='about-us-partner-linkedin-button-mobile'/></a>
                         </div>
                         <div className='about-us-partner-description-mobile'>
                             {t("diogo_description")}
                         </div>
-                        <a href='https://www.linkedin.com/in/diogocordeiro-feup/' target='_blank' rel='noreferrer'><div className='about-us-partner-linkedin-button-mobile'/></a>
                         <div className='about-us-partner-bar-mobile'/>
                     </div>
                     
@@ -222,11 +222,11 @@ function AboutUs() {
                         </div>
                         <div className='about-us-partner-position-mobile'>
                             {t("CTO")}
+                            <a href='https://www.linkedin.com/in/joaobcosta2001/' target='_blank' rel='noreferrer'><div className='about-us-partner-linkedin-button-mobile'/></a>
                         </div>
                         <div className='about-us-partner-description-mobile'>
                             {t("joao_description")}
                         </div>
-                        <a href='https://www.linkedin.com/in/joaobcosta2001/' target='_blank' rel='noreferrer'><div className='about-us-partner-linkedin-button-mobile'/></a>
                         <div className='about-us-partner-bar-mobile'/>
                     </div>
                 </div>

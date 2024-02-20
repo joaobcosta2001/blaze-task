@@ -57,6 +57,18 @@
     height: 40px;
     background-color: #ffffff;
     cursor: pointer;
+    color: black;
+}
+
+#contacts-form-submit-button-submitting{
+    border: none;
+    font-family: poppins;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: rgb(193, 193, 193);
 }
 
 #contacts-color-bar{
@@ -135,6 +147,18 @@
     color:black;
 }
 
+#contacts-form-submit-button-mobile-submitting{
+    border: none;
+    font-family: poppins;
+    font-size: 4vw;
+    width: 40vw;
+    height: 10vw;
+    border-radius: 5vw;
+    background-color: #e9eaed;
+    cursor: pointer;
+    color: rgb(193, 193, 193);
+}
+
 #contacts-color-bar-mobile{
     background: rgb(255,0,0);
     background: linear-gradient(49deg, rgba(255,0,0,1) 0%, rgba(255,208,0,1) 100%);
@@ -142,4 +166,43 @@
     height: 2vw;
     margin-top: 8vw;
     margin-bottom: 10vw;
+}
+
+
+
+
+
+
+
+
+#contact-submit-button-section{
+    display: flex;
+    justify-content: right;
+}
+
+#contact-submit-button-section-mobile{
+    display: flex;
+}
+
+#contacts-submit-confirmation{
+    
+    border: none;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-top: 5px;
+    color: var(--red-orange);
+}
+
+#contacts-submit-confirmation-mobile{
+    border: none;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 5px;
+    color: var(--red-orange);
 }

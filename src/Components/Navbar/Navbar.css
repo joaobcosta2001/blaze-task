@@ -29,10 +29,10 @@
 
 #mobile-navbar-toggle-button{
     background-color: transparent;
-    left: 30px;
-    top: 30px;
-    width: 50px;
-    height: 50px;
+    left: 6vw;
+    top: 6vw;
+    width: 15vw;
+    height: 15vw;
     border: none;
     padding: 0;
     position: relative;
@@ -42,26 +42,27 @@
 
 .mobile-navbar-toggle-button-bar{
     position: absolute;
-    width: 50px;
-    height: 9px;
-    border-radius: 5px;
+    width: 12vw;
+    height: 2vw;
+    border-radius: 2vw;
     background-color: black;
+    border: 0.5vw solid rgb(255, 255, 255);
     transition: 0.2s;
     opacity: 1;
     cursor: pointer;
 }
 
 #mobile-navbar-toggle-button-bar-1{
-    top:3px;
+    top:0.8vw;
 }
 #mobile-navbar-toggle-button-bar-2{
-    top:21px;
+    top:5vw;
 }
 #mobile-navbar-toggle-button-bar-3{
-    top:21px;
+    top:5vw;
 }
 #mobile-navbar-toggle-button-bar-4{
-    top:40px;
+    top:9.5vw;
 }
 
 #mobile-navbar-toggle-button-bar-1-toggled{
@@ -73,11 +74,13 @@
     transition: 0.2s;
     top:21px;
     transform: rotate(-45deg);
+    border: 0;
 }
 #mobile-navbar-toggle-button-bar-3-toggled{
     transition: 0.2s;
     top:21px;
     transform: rotate(45deg);
+    border: 0;
 }
 #mobile-navbar-toggle-button-bar-4-toggled{
     transition: 0.2s;
@@ -106,6 +109,7 @@
     padding-top: 15%;
     opacity: 0;
     transition: 0.2s ease-out;
+    overflow-y: hidden;
 }
 
 .mobile-navbar-button{
