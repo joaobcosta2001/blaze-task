@@ -5,6 +5,7 @@ import { isMobile } from "react-device-detect";
 import i18next from "i18next";
 import emailjs from "@emailjs/browser"
 import {motion} from "framer-motion"
+import { Helmet } from "react-helmet";
 
 function Contacts(){
 
@@ -48,6 +49,9 @@ function Contacts(){
 
     return(
         <div>
+            <Helmet>
+                <link rel="canonical" href="https://www.blazetask.com/contacts" />
+            </Helmet>
             {!isMobile?(
             <div id="contacts-div">
                 <div id="contacts-description-div">

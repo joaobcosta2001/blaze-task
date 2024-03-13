@@ -6,6 +6,7 @@ import results_image from "../../assets/images/results-image.png"
 import { isMobile } from 'react-device-detect';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 function Services() {
 
@@ -72,6 +73,9 @@ function Services() {
 
     return(
         <div>
+        <Helmet>
+            <link rel="canonical" href="https://www.blazetask.com/process" />
+        </Helmet>
         {!isMobile?(
             <div id="services-page">
                 <div id="services-title-div">

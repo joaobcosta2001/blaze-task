@@ -3,6 +3,7 @@ import "./Homepage.css"
 import { isMobile } from "react-device-detect";
 import { useTranslation } from "react-i18next";
 import {easeOut, motion} from "framer-motion"
+import { Helmet } from "react-helmet";
 
 function Homepage() {
 
@@ -10,6 +11,9 @@ function Homepage() {
     
     return (
         <div>
+        <Helmet>
+            <link rel="canonical" href="https://www.blazetask.com/" />
+        </Helmet>
         {!isMobile?(
             <div id="homepage">
             

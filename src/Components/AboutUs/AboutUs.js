@@ -3,6 +3,7 @@ import { isMobile } from 'react-device-detect';
 import joao_costa from '../../assets/images/joao-costa.jpeg'
 import diogo_cordeiro from '../../assets/images/diogo-cordeiro.jpg'
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 function AboutUs() {
 
@@ -10,6 +11,9 @@ function AboutUs() {
 
     return(
         <div>
+        <Helmet>
+            <link rel="canonical" href="https://www.blazetask.com/services" />
+        </Helmet>
         {!isMobile?(
             <div id="about-us-page">
                 <div id="about-us-main-div">
