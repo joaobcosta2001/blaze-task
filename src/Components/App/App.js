@@ -2,7 +2,7 @@ import './App.css';
 import Homepage from "../Homepage/Homepage"
 import Services from "../Services/Services"
 import Navbar from "../Navbar/Navbar"
-import { BrowserRouter,Route,Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import "../i18n/i18n";
 import Footer from '../Footer/Footer';
 import Contacts from '../Contacts/Contacts';
@@ -10,19 +10,16 @@ import AboutUs from '../AboutUs/AboutUs'
 import NotFound from '../NotFound/NotFound';
 import ReactGA from 'react-ga';
 
+const TRACKING_ID = 'G-511H5GLMN3'
+ReactGA.initialize(TRACKING_ID);
+
+
 function App() {
 
-  ReactGA.initialize('G-511H5GLMN3');
-  const location = useLocation();
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [location]);
 
 
   return (
     <BrowserRouter>
-    
-      
       <Navbar/>
       <Routes>
         <Route path="/" element={<Homepage/>}/>

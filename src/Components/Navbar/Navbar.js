@@ -5,6 +5,7 @@ import { useState } from "react";
 import { isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ReactGA from "react-ga";
 
 function Navbar() {
 
@@ -47,10 +48,10 @@ function Navbar() {
         <div>
         {!isMobile?(
             <div id="navbar">
-                <Link to="/"><NavbarButton title={t("HOME")}/></Link>
-                <Link to="/about-us"><NavbarButton title={t("ABOUT_US")}/></Link>
-                <Link to="/process"><NavbarButton title={t("SERVICES")}/></Link>
-                <Link to="/contacts"><NavbarButton title={t("CONTACTS")}/></Link>
+                <Link to="/"><NavbarButton title={t("HOME")} onclick={()=>{ReactGA.event({category:"page_change",action:"go to home"})}}/></Link>
+                <Link to="/about-us"><NavbarButton title={t("ABOUT_US")} onclick={()=>{ReactGA.event({category:"page_change",action:"go to about us"})}}/></Link>
+                <Link to="/process"><NavbarButton title={t("SERVICES")} onclick={()=>{ReactGA.event({category:"page_change",action:"go to services"})}}/></Link>
+                <Link to="/contacts"><NavbarButton title={t("CONTACTS")} onclick={()=>{ReactGA.event({category:"page_change",action:"go to contacts"})}}/></Link>
                 <div id="language-button-div">
                     <div id="language-button-container">
                         <div id={(language==="pt")?"language-button-background-div-pt":"language-button-background-div-en"} onClick={toggleLanguage}></div>

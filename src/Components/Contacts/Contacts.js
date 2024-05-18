@@ -6,6 +6,7 @@ import i18next from "i18next";
 import emailjs from "@emailjs/browser"
 import {motion} from "framer-motion"
 import { Helmet } from "react-helmet";
+import PageView from "../PageView/PageView";
 
 function Contacts(){
 
@@ -49,6 +50,7 @@ function Contacts(){
 
     return(
         <div>
+            <PageView/>
             <Helmet>
                 <link rel="canonical" href="https://www.blazetask.com/contacts" />
             </Helmet>
