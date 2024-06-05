@@ -4,10 +4,12 @@ import joao_costa from '../../assets/images/joao-costa.jpeg'
 import diogo_cordeiro from '../../assets/images/diogo-cordeiro.jpg'
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga4';
 
 function AboutUs() {
 
     const {t} = useTranslation()
+    ReactGA.send({ hitType: "pageview", page: "/process", title: "Visited Process" });
 
     return(
         <div>

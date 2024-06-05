@@ -4,8 +4,11 @@ import { isMobile } from "react-device-detect";
 import { useTranslation } from "react-i18next";
 import {easeOut, motion} from "framer-motion"
 import { Helmet } from "react-helmet";
+import ReactGA from "../Analytics/analytics";
 
 function Homepage() {
+    
+    ReactGA.send({ hitType: "pageview", page: "/process", title: "Visited Process" });
 
     const {t} = useTranslation()
     

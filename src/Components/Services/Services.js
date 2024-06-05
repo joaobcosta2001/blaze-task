@@ -7,8 +7,12 @@ import { isMobile } from 'react-device-detect';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga4';
 
 function Services() {
+
+    
+    ReactGA.send({ hitType: "pageview", page: "/process", title: "Visited Process" });
 
     const {t} = useTranslation()
 
