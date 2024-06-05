@@ -7,7 +7,6 @@ import { isMobile } from 'react-device-detect';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
-import PageView from '../PageView/PageView';
 
 function Services() {
 
@@ -74,7 +73,6 @@ function Services() {
 
     return(
         <div>
-        <PageView/>
         <Helmet>
             <link rel="canonical" href="https://www.blazetask.com/process" />
         </Helmet>

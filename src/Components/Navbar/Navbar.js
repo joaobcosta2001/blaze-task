@@ -9,6 +9,7 @@ import ReactGA from "react-ga";
 
 function Navbar() {
 
+
     const {t} = useTranslation()
 
     const [language,setLanguage] = useState("pt")

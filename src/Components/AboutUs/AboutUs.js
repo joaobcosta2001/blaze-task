@@ -4,7 +4,6 @@ import joao_costa from '../../assets/images/joao-costa.jpeg'
 import diogo_cordeiro from '../../assets/images/diogo-cordeiro.jpg'
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
-import PageView from '../PageView/PageView';
 
 function AboutUs() {
 
@@ -12,7 +11,6 @@ function AboutUs() {
 
     return(
         <div>
-        <PageView/>
         <Helmet>
             <link rel="canonical" href="https://www.blazetask.com/services" />
         </Helmet>

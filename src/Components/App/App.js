@@ -8,15 +8,12 @@ import Footer from '../Footer/Footer';
 import Contacts from '../Contacts/Contacts';
 import AboutUs from '../AboutUs/AboutUs'
 import NotFound from '../NotFound/NotFound';
-import ReactGA from 'react-ga';
-
-const TRACKING_ID = 'G-511H5GLMN3'
-ReactGA.initialize(TRACKING_ID);
+import ReactGA from 'react-ga4';
 
 
 function App() {
-
-
+  
+  ReactGA.initialize('G-511H5GLMN3');
 
   return (
     <BrowserRouter>
